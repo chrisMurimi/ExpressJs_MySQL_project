@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html >
+    <head>
+        <title><%-title%></title>
+        <link rel="stylesheet" type="text/css" href="css/style.css" />   
+    </head>
+
+
+    <body>
+        <div class="container_edit">
+
+            <h1 class="title" > (Editing users)</h1>
+            <form action="/update" method="POST">
+                <input type="hidden" value="<%= user.id%>" name="id" />
+                <div class="form_child">
+                    <label for="name" class="label" >Enter users name:</label>
+                    <input id="name" class="input" type="text" placeholder="users name"  name="name" value="<%= user.name%>"  required />
+                </div>
+
+                <div class="form_child">
+                    <label for="email" class="label" >Enter users email:</label>
+                    <input id="email" class="input" type="email" placeholder="users email"  name="email" value="<%= user.email%>" required />
+                </div>
+
+                <div class="form_child">
+                    <label for="phone" class="label" >Enter users phone number:</label>
+                    <input id="phone" class="input" type="number" placeholder="users phone number"   name="phone" value="<%= user.phone_no%>" required />
+                </div>
+
+                <input type="submit" class="btn_add_usser" value="Add user" />
+            
+                
+            </form>
+        </div>
+    </body>
+
+
+</html>

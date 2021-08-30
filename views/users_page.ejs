@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html >
+    <head>
+        <title><%-title%></title>
+        <link rel="stylesheet" type="text/css" href="css/style.css" />    </head>
+    <body>
+     <div class="container">
+            <h1 class="title">Eldohub CRUD project with expressJS and mySQL by chris</h1>
+        <a href="add"><button class="btn_add_usser">Add User</button></a> 
+            <table class="users_table">
+                <thead class="table_header">
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone number</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+            <tbody class="table_body">
+                <% user.forEach(function(user){ %>
+                        <tr>
+                            <td><%-user.name%></td>
+                            <td><%-user.email%></td>
+                            <td><%-user.phone_no%></td>
+                            <td>
+                                <a href="/edit/<%- user.id%> "><button class="button_primary">Edit</button></a>
+                                <a href="/delete/<%- user.id%>"><button class="button_dager">Delete</button></a>
+                            </td>
+                        </tr>
+                <% }); %>
+            </tbody>
+            </table>
+    </div>
+    </body>
+</html>
