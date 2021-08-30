@@ -1,0 +1,82 @@
+
+body{
+    background: beige url(http://www.estidia.eu/wp-content/uploads/2018/04/Savin-NY-Website-Background-Web.jpg) center center no-repeat;
+    background-size: cover;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.container, .container_edit{
+    width: 50%;
+    margin: auto;
+    background: url(https://i.pinimg.com/originals/75/8d/15/758d15e9a42a609f8a956ce57424991e.jpg) repeat;
+    height: 650px;
+    border: 1px solid black;
+    border-radius: 20px;
+    position: relative;
+    top: 20px;
+    padding-left: 10px;
+}
+.title{
+    text-align: center;
+    font-size: 30px;
+    font-family: cursive;
+    letter-spacing: -1px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.btn_add_usser{
+    width: 100px;
+    height: 40px;
+    margin: 20px;
+    background: brown;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.users_table{
+    width:100%;
+	
+}
+.table_header{
+    
+	width:100%;
+	background:#000;
+    color: white;
+}
+.table_body{
+    padding: 20px;
+    font-size: 15px;
+    color: #000;
+    font-weight: bold;
+  
+}
+.button_primary{
+    background: blue;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+}
+.button_dager{
+    background: red;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+}
+.label{
+    display: block;
+    padding: 10px;
+    margin: 10px;
+    font-family: cursive;
+    font-size: 20px;
+    font-weight: bold;
+}
+.input{
+    width: 350px;
+    height: 40px;
+    margin-left: 100px;
+}
